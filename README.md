@@ -39,3 +39,21 @@ In this example the user is looking for information about the movie "Elf" node l
 If the user does not enter a search parameter, the 'movie-this' command returns info for the movie "Mr. Nobody"
 
 ![movie-this-default](/images/movie-default.gif)
+
+## 'do-what-it-says'
+
+The 'do-what-it-says' command reads the random.txt file and executes the parameters inside of it. By default it is set to 'spotify-this-song, I Want It That Way', but this can easily be changed as needed.
+
+![do-what-it-says](/images/do-what-it-says.gif)
+
+## Extra Tidbits
+
+If the user does not enter a valid command, they receive the following message: "Not a valid command. Please try: 'concert-this', 'spotify-this-song', 'movie-this', or 'do-what-it-says'"
+
+![command-message](/images/command-message.gif)
+
+All results are returned in the command line, but also into a separate text file named 'log.txt' as well.
+
+![log-tex](/images/log-text-compressed.gif)
+
+Technologies used: Javascript, Node.js, Moment.js, Bandsintown API, Spotify API, OMDb API
