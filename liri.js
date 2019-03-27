@@ -66,7 +66,7 @@ function music(uInput) {
   logText(musicData)
 })
   } else {
-    spotify.search({ type: 'track', query: uInput, limit: 1}, function(err, data) {
+    spotify.search({ type: 'track', query: uInput}, function(err, data) {
       if (err) {
         return console.log('Error occurred: ' + err);
       }

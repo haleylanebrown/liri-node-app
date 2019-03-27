@@ -12,6 +12,14 @@ There are four possible Commands: 'concert-this', 'spotify-this-song', 'movie-th
 
 The 'concert-this' command uses the Bandsintown API to retrive 5 upcoming concerts for an artist/band that is searched. The venue, location and date is provided for each result. Moment.js is used to format the date from the Bandsintown API.
 
-In the following example the user is looking for the next Billie Eilish Concert: node liri.js concert-this Billie Eilish
+In the following example the user is looking for the next billie eilish Concert: node liri.js concert-this Billie Eilish
 
 ![concert-this](/images/concert-this.gif)
+
+## 'spotify-this-song'
+
+The 'spotify-this-song' command uses the Spotify API to retrieve data about the song entered in the search parameter. The most relevant song title that contains the search parameter or parts of it is returned. The user will receive the artist, song name, a link to preview the song, and the album name.
+
+In this example the user is looking for the Song "Thriller" node liri.js spotify-this-song thriller
+
+![spotify-this-song](/images/spotify-this-song.gif)
