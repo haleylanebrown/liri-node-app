@@ -15,7 +15,7 @@ if (process.argv.length === 3){
 axios.get("http://www.omdbapi.com/?t=mr+nobody+&y=&plot=short&apikey=trilogy").then(
     function(response) {
 
-      console.log(`Title: ${response.data.Title}`);
+      console.log(`\nTitle: ${response.data.Title}`);
       console.log(`Year Released: ${response.data.Year}`);
       console.log(`IMDB Rating: ${response.data.imdbRating}`);
       console.log(`Rotten Tomatoes Rating: ${response.data.Ratings[1].Value}`)
